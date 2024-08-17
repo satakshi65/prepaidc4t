@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Cloud4Things Dashboard" />
+
+    <title>Prepaid - Cloud4Things Dashboard</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <!--main_css-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/dark-theme.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--responsive_css-->
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+
+    <!--font-awesome-->
+    <link rel="stylesheet" href="css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="css/fontawesome.min.css" type="text/css">
+
+    <!--owl-carousel-->
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+
+    <!--Apexcharts-->
+    <link href="css/apexcharts.css" rel="stylesheet" type="text/css">
+
+    <!--animate-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    
+</head>
+
+<body>
+
+<div id="wrapper">
+    
+    <!--main-header-->
+    <header class="main-header">
+        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+        <div class="logo-area1" style="display: none;">
+            <a href="index.html"><img alt="image" src="images/logo.png"></a>
+        </div>
+        <div class="row full-menu">
+            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
+                <div class="logo-area">
+                    <a href="index.html"><img alt="image" src="images/logo.png"></a>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <ul class="menu">
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li class="active"><a href="activities.html">Activities</a></li>
+                    <li><a href="analytics.html">Analytics</a></li>
+                    <li><a href="setup.html">Setup</a></li>
+                </ul>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                <form class="project-dropdown">
+                    <!-- <label>Select Project :</label> -->
+                    <select>
+                        <option>Select Project :</option>
+                        <option>Project1</option>
+                        <option>Project2</option>
+                        <option>Project3</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-12 col-sm-12 col-12 p-0">
+                <div class="notification">
+                    <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 611.999 611.999"
+                        xml:space="preserve">
+                        <g>
+                            <g>
+                                <g>
+                                    <path
+                                        d="M570.107,500.254c-65.037-29.371-67.511-155.441-67.559-158.622v-84.578c0-81.402-49.742-151.399-120.427-181.203
+                                        C381.969,34,347.883,0,306.001,0c-41.883,0-75.968,34.002-76.121,75.849c-70.682,29.804-120.425,99.801-120.425,181.203v84.578
+                                        c-0.046,3.181-2.522,129.251-67.561,158.622c-7.409,3.347-11.481,11.412-9.768,19.36c1.711,7.949,8.74,13.626,16.871,13.626
+                                        h164.88c3.38,18.594,12.172,35.892,25.619,49.903c17.86,18.608,41.479,28.856,66.502,28.856
+                                        c25.025,0,48.644-10.248,66.502-28.856c13.449-14.012,22.241-31.311,25.619-49.903h164.88c8.131,0,15.159-5.676,16.872-13.626
+                                        C581.586,511.664,577.516,503.6,570.107,500.254z M484.434,439.859c6.837,20.728,16.518,41.544,30.246,58.866H97.32
+                                        c13.726-17.32,23.407-38.135,30.244-58.866H484.434z M306.001,34.515c18.945,0,34.963,12.73,39.975,30.082
+                                        c-12.912-2.678-26.282-4.09-39.975-4.09s-27.063,1.411-39.975,4.09C271.039,47.246,287.057,34.515,306.001,34.515z
+                                        M143.97,341.736v-84.685c0-89.343,72.686-162.029,162.031-162.029s162.031,72.686,162.031,162.029v84.826
+                                        c0.023,2.596,0.427,29.879,7.303,63.465H136.663C143.543,371.724,143.949,344.393,143.97,341.736z M306.001,577.485
+                                        c-26.341,0-49.33-18.992-56.709-44.246h113.416C355.329,558.493,332.344,577.485,306.001,577.485z" />
+                                    <path d="M306.001,119.235c-74.25,0-134.657,60.405-134.657,134.654c0,9.531,7.727,17.258,17.258,17.258
+                                        c9.531,0,17.258-7.727,17.258-17.258c0-55.217,44.923-100.139,100.142-100.139c9.531,0,17.258-7.727,17.258-17.258
+                                        C323.259,126.96,315.532,119.235,306.001,119.235z" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <span class="count"></span>
+                    <div class="notify-box">
+                        <h4>Notifications</h4>
+                        <ul>
+                            <li>
+                                <p>Your Version in updated !!!</p>
+                                <h6>Project | 48 mins ago</h6>
+                            </li>
+                            <li>
+                                <p>Your Version in updated !!!</p>
+                                <h6>Project | 48 mins ago</h6>
+                            </li>
+                            <li>
+                                <p>Your Version in updated !!!</p>
+                                <h6>Project | 48 mins ago</h6>
+                            </li>
+                            <li>
+                                <p>Your Version in updated !!!</p>
+                                <h6>Project | 48 mins ago</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-12 col-sm-12 col-12">
+                <div class="toggle-s-box">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-12 col-sm-12 col-12 p-0">
+                <div class="user-sec">
+                    <h4>Satakshi <i class="fa-solid fa-angle-down"></i></h4>
+                </div>
+                <div class="user-box">
+                    <ul>
+                        <li>
+                            <p><i class="fa-solid fa-gear"></i> CPS Version: 1.0.0</p>
+                        </li>
+                        <li>
+                            <p><i class="fa-solid fa-lock"></i> <a href="change-password.html">Change Password</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p><i class="fa-solid fa-arrow-right-from-bracket"></i> <a href="#">Logout</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--end-->
+    <div class="clearfix"></div>
+    <!--main-body-->
+    <div class="main-site-area">
+        <!--top-form-->
+        <section class="top-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        
+                        <div class="activities-list">
+                            <h1>Activities</h1>
+                            <ul class="act-sec">
+                                <li><a href="#">Change Meter</a></li>
+                                <li><a href="#">Change Gateway</a></li>
+                                <li><a href="#">Change Meter Load</a></li>
+                                <li><a href="#">Billing Plan Change Request</a></li>
+                                <li><a href="#">Meter Recharge</a></li>
+                                <li><a href="#">Credit Note</a></li>
+                                <li><a href="#">Debit Note</a></li>
+                                <li><a href="#">IFUD Credit Note</a></li>
+                                <li><a href="#">IFUD Debit Note</a></li>
+                                <li><a href="#">Delete Meter</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="row">
+                            
+                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h1 class="mb-3">Meter Recharge Configuration
+                                </h1>
+                               <div class="top-form">
+    <form>
+        <div class="row">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                      <option selected>Select an Option</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <label for="floatingSelect">Meter Name</label>
+                  </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                      <option selected>Select an Option</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <label for="floatingSelect">Method</label>
+                  </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Amount">
+                    <label for="floatingInput">Amount</label>
+                  </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Meter Balance Amount">
+                    <label for="floatingInput">Meter Balance Amount</label>
+                  </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Cheque No.">
+                    <label for="floatingInput">Cheque No.</label>
+                  </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Cheque Date.">
+                    <label for="floatingInput">Cheque Date.</label>
+                  </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Bank">
+                    <label for="floatingInput">Bank</label>
+                  </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Transaction Id">
+                    <label for="floatingInput">Transaction Id</label>
+                  </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Comment">
+                    <label for="floatingInput">Comment</label>
+                  </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Vend Code">
+                    <label for="floatingInput">Vend Code</label>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="mb-3">Subscriber Detail
+            </h1>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Unit">
+                    <label for="floatingInput">Unit</label>
+                  </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Subscriber Name">
+                    <label for="floatingInput">Subscriber Name</label>
+                  </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Subscriber No.">
+                    <label for="floatingInput">Subscriber No.</label>
+                  </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Meter Serial No.">
+                    <label for="floatingInput">Meter Serial No.</label>
+                  </div>
+            </div>
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <input type="reset" value="Cancel" class="cancel">
+                <input type="submit" value="Save" class="save">
+            </div>
+        </div>
+    </form>
+</div>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end-->
+    <!--footer-->
+    <footer class="main-footer">
+        <div class="row">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <p>Copyright @2024. All Rights Reserved</p>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div id="chcp_font_size" class="input-group">
+                    <span class="input-group-btn">
+                      <button id="btn-decrease" class="btn btn-default" type="button"><i class="fa fa-font" aria-hidden="true"></i>-</button>
+                      <button id="btn-orig" class="btn btn-default" type="button"><i class="fa fa-font" aria-hidden="true"></i></button>
+                      <button id="btn-increase" class="btn btn-default" type="button"><i class="fa fa-font" aria-hidden="true"></i>+</button>
+                    </span>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <!--end-->
+</div>
+
+<!--end-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    
+    <!-- ApexCharts -->
+     <script src="js/apexcharts.js"></script>
+    
+    <!-- Optional JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/custom.js"></script>
+
+    <!--Bootstrap-->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

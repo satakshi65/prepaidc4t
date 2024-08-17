@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=2.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Cloud4Things Dashboard" />
+
+    <title>Prepaid - Cloud4Things Dashboard</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <!--main_css-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/dark-theme.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--responsive_css-->
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+
+    <!--font-awesome-->
+    <link rel="stylesheet" href="css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="css/fontawesome.min.css" type="text/css">
+
+    <!--owl-carousel-->
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+
+    <!--Apexcharts-->
+    <link href="css/apexcharts.css" rel="stylesheet" type="text/css">
+
+    <!--animate-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!--main-header-->
+        <header class="main-header">
+            <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+            <div class="logo-area1" style="display: none;">
+                <a href="index.html"><img alt="image" src="images/logo.png"></a>
+            </div>
+            <div class="row full-menu">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
+                    <div class="logo-area">
+                        <a href="index.html"><img alt="image" src="images/logo.png"></a>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                    <ul class="menu">
+                        <li class="active"><a href="index.html">Dashboard</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="analytics.html">Analytics</a></li>
+                        <li><a href="setup.html">Setup</a></li>
+                    </ul>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                    <form class="project-dropdown">
+                        <!-- <label>Select Project :</label> -->
+                        <select>
+                            <option>Select Project :</option>
+                            <option>Project1</option>
+                            <option>Project2</option>
+                            <option>Project3</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-12 col-sm-12 col-12 p-0">
+                    <div class="notification">
+                        <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 611.999 611.999"
+                            xml:space="preserve">
+                            <g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M570.107,500.254c-65.037-29.371-67.511-155.441-67.559-158.622v-84.578c0-81.402-49.742-151.399-120.427-181.203
+                                            C381.969,34,347.883,0,306.001,0c-41.883,0-75.968,34.002-76.121,75.849c-70.682,29.804-120.425,99.801-120.425,181.203v84.578
+                                            c-0.046,3.181-2.522,129.251-67.561,158.622c-7.409,3.347-11.481,11.412-9.768,19.36c1.711,7.949,8.74,13.626,16.871,13.626
+                                            h164.88c3.38,18.594,12.172,35.892,25.619,49.903c17.86,18.608,41.479,28.856,66.502,28.856
+                                            c25.025,0,48.644-10.248,66.502-28.856c13.449-14.012,22.241-31.311,25.619-49.903h164.88c8.131,0,15.159-5.676,16.872-13.626
+                                            C581.586,511.664,577.516,503.6,570.107,500.254z M484.434,439.859c6.837,20.728,16.518,41.544,30.246,58.866H97.32
+                                            c13.726-17.32,23.407-38.135,30.244-58.866H484.434z M306.001,34.515c18.945,0,34.963,12.73,39.975,30.082
+                                            c-12.912-2.678-26.282-4.09-39.975-4.09s-27.063,1.411-39.975,4.09C271.039,47.246,287.057,34.515,306.001,34.515z
+                                            M143.97,341.736v-84.685c0-89.343,72.686-162.029,162.031-162.029s162.031,72.686,162.031,162.029v84.826
+                                            c0.023,2.596,0.427,29.879,7.303,63.465H136.663C143.543,371.724,143.949,344.393,143.97,341.736z M306.001,577.485
+                                            c-26.341,0-49.33-18.992-56.709-44.246h113.416C355.329,558.493,332.344,577.485,306.001,577.485z" />
+                                        <path d="M306.001,119.235c-74.25,0-134.657,60.405-134.657,134.654c0,9.531,7.727,17.258,17.258,17.258
+                                            c9.531,0,17.258-7.727,17.258-17.258c0-55.217,44.923-100.139,100.142-100.139c9.531,0,17.258-7.727,17.258-17.258
+                                            C323.259,126.96,315.532,119.235,306.001,119.235z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <span class="count"></span>
+                        <div class="notify-box">
+                            <h4>Notifications</h4>
+                            <ul>
+                                <li>
+                                    <p>Your Version in updated !!!</p>
+                                    <h6>Project | 48 mins ago</h6>
+                                </li>
+                                <li>
+                                    <p>Your Version in updated !!!</p>
+                                    <h6>Project | 48 mins ago</h6>
+                                </li>
+                                <li>
+                                    <p>Your Version in updated !!!</p>
+                                    <h6>Project | 48 mins ago</h6>
+                                </li>
+                                <li>
+                                    <p>Your Version in updated !!!</p>
+                                    <h6>Project | 48 mins ago</h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-12 col-sm-12 col-12">
+                    <div class="toggle-s-box">
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="checkbox-label">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <span class="ball"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-12 col-sm-12 col-12 p-0">
+                    <div class="user-sec">
+                        <h4>Satakshi <i class="fa-solid fa-angle-down"></i></h4>
+                    </div>
+                    <div class="user-box">
+                        <ul>
+                            <li>
+                                <p><i class="fa-solid fa-gear"></i> CPS Version: 1.0.0</p>
+                            </li>
+                            <li>
+                                <p><i class="fa-solid fa-lock"></i> <a href="change-password.html">Change Password</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p><i class="fa-solid fa-arrow-right-from-bracket"></i> <a href="#">Logout</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--end-->
+        <div class="clearfix"></div>
+        <!--main-body-->
+        <div class="main-site-area">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="site-name">
+                        <h4><strong>Site Name :</strong> Pavilion Heights <span>Prepaid</span> </h4>
+                    </div>
+                </div>
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <!--second-part-->
+                    <section class="second-part">
+                        <div class="row">
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-5 col-12">
+                                <h1 class="mb-3">DG Status</h1>
+                                <div class="dg-sec">
+                                    <ul>
+                                        <li> Total DGs <span class="float-end bg-info">1 </span></li>
+                                        <li> Total DG ON <span class="float-end bg-warning">1 </span></li>
+                                        <li> Total DG OFF <span class="float-end bg-danger">0 </span></li>
+                                        <li> Total Meters DG ON <span class="float-end bg-primary"><a href="#">1570</a>
+                                            </span></li>
+                                        <li> Total Meters DG OFF <span class="float-end bg-primary"><a
+                                                    href="#">0</a></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-9 col-sm-12 col-12">
+                                <h1 class="mb-3">Current Month Summary</h1>
+                                <div class="row">
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="card  mb-4">
+                                            <div class="card-body p-3">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <div class="numbers">
+                                                            <p class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                Opening Balance</p>
+                                                            <h5 class="font-weight-bolder mb-0">₹2,18,225
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4 text-end">
+                                                        <div
+                                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                            <img alt="image" src="images/icon1.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <a href="#">
+                                            <div class="card  mb-4">
+                                                <div class="card-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <div class="numbers">
+                                                                <p
+                                                                    class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                    Recharge</p>
+                                                                <h5 class="font-weight-bolder mb-0">₹15,45,225
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 text-end">
+                                                            <div
+                                                                class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                                <img alt="image" src="images/icon2.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <a href="#">
+                                            <div class="card  mb-4">
+                                                <div class="card-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <div class="numbers">
+                                                                <p
+                                                                    class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                    Consumption</p>
+                                                                <h5 class="font-weight-bolder mb-0">₹2,18,225
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 text-end">
+                                                            <div
+                                                                class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                                <img alt="image" src="images/icon3.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <a href="#">
+                                            <div class="card  mb-4">
+                                                <div class="card-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <div class="numbers">
+                                                                <p
+                                                                    class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                    Current Balance</p>
+                                                                <h5 class="font-weight-bolder mb-0">₹12,18,225
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 text-end">
+                                                            <div
+                                                                class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                                <img alt="image" src="images/icon4.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <a href="#">
+                                            <div class="card  mb-4">
+                                                <div class="card-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <div class="numbers">
+                                                                <p
+                                                                    class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                    Gateways</p>
+                                                                <h5 class="font-weight-bolder mb-0">57 <span
+                                                                        class="text-danger"><i
+                                                                            class="fa-solid fa-arrow-down"></i> 3</span>
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 text-end">
+                                                            <div
+                                                                class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                                <img alt="image" src="images/icon5.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <a href="#">
+                                            <div class="card  mb-4">
+                                                <div class="card-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <div class="numbers">
+                                                                <p
+                                                                    class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                    Meters</p>
+                                                                <h5 class="font-weight-bolder mb-0">1570 <span
+                                                                        class="text-danger"><i
+                                                                            class="fa-solid fa-arrow-down"></i>
+                                                                        62</span> <strong class="text-secondary"><i
+                                                                            class="fa-solid fa-arrow-down"></i>3</strong>
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 text-end">
+                                                            <div
+                                                                class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                                <img alt="image" src="images/icon6.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <a href="#">
+                                            <div class="card  mb-4">
+                                                <div class="card-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <div class="numbers">
+                                                                <p
+                                                                    class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                    Cut Meters</p>
+                                                                <h5 class="font-weight-bolder mb-0">20
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 text-end">
+                                                            <div
+                                                                class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                                <img alt="image" src="images/icon7.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <a href="#">
+                                            <div class="card  mb-4">
+                                                <div class="card-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <div class="numbers">
+                                                                <p
+                                                                    class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                    Cut Warning</p>
+                                                                <h5 class="font-weight-bolder mb-0">16
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 text-end">
+                                                            <div
+                                                                class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                                <img alt="image" src="images/icon8.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <a href="#">
+                                            <div class="card  mb-4">
+                                                <div class="card-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <div class="numbers">
+                                                                <p
+                                                                    class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                    Overload Meters
+                                                                </p>
+                                                                <h5 class="font-weight-bolder mb-0">1
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 text-end">
+                                                            <div
+                                                                class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                                <img alt="image" src="images/icon9.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <a href="#">
+                                            <div class="card  mb-4">
+                                                <div class="card-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <div class="numbers">
+                                                                <p
+                                                                    class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                    Grid Load Tampered</p>
+                                                                <h5 class="font-weight-bolder mb-0">1
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 text-end">
+                                                            <div
+                                                                class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                                <img alt="image" src="images/icon10.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <a href="#">
+                                            <div class="card  mb-4">
+                                                <div class="card-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <div class="numbers">
+                                                                <p
+                                                                    class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                    DG Load Tampered</p>
+                                                                <h5 class="font-weight-bolder mb-0">1
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 text-end">
+                                                            <div
+                                                                class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                                <img alt="image" src="images/icon11.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <a href="#">
+                                            <div class="card  mb-4">
+                                                <div class="card-body p-3">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <div class="numbers">
+                                                                <p
+                                                                    class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                    Tampered Consumption</p>
+                                                                <h5 class="font-weight-bolder mb-0">0
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 text-end">
+                                                            <div
+                                                                class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                                <img alt="image" src="images/icon12.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!--end-->
+                    <!--middle-part-->
+                    <section class="middle-part">
+                            <div class="row stat-each" id="m-part">
+                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <h1 style="margin-bottom: 30px;">Health of Device</h1>
+                                </div>
+                                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
+                                    <div class="row">
+                                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <div class="health-each">
+                                                <h5>IoT Gateways</h5>
+                                                <div class="chart-inner" id="m-chart1">
+                                                    <canvas id="BA-chart-job-error" id="m-chart-1" width="800"
+                                                        height="600"></canvas>
+                                                </div>
+                                                <div class="row chart-txt">
+                                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 p-0">
+                                                        <div class="mb-2">
+                                                            <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Unhealthy</p>
+                                                        </div>
+                                                        <h4>45
+                                                        </h4>
+                                                    </div>
+                                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 p-0">
+                                                        <div class="mb-2">
+                                                            <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Healthy </p>
+                                                        </div>
+                                                        <h4>55
+                                                        </h4>
+                                                    </div>
+                                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 p-0">
+                                                        <div class="mb-2">
+                                                            <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Unstate
+                                                            </p>
+                                                        </div>
+                                                        <h4>33
+                                                        </h4>
+                                                    </div>
+                                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 p-0">
+                                                        <div class="mb-2">
+                                                            <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Total
+                                                            </p>
+                                                        </div>
+                                                        <h4>133
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <div class="health-each">
+                                                <h5>Meters</h5>
+                                                <div class="chart-inner" id="m-chart2">
+                                                    <canvas id="BA-chart-job-error1" id="m-chart-2" width="800"
+                                                        height="600"></canvas>
+                                                </div>
+                                                <div class="row chart-txt">
+                                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 p-0">
+                                                        <div class="mb-2">
+                                                            <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                            <p class="text-xs mt-1 mb-0 font-weight-bold">
+                                                                Unhealthy</p>
+                                                        </div>
+                                                        <h4>31
+                                                        </h4>
+                                                    </div>
+                                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 p-0">
+                                                        <div class="mb-2">
+                                                            <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Healthy</p>
+                                                        </div>
+                                                        <h4>696
+                                                        </h4>
+                                                    </div>
+                                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 p-0">
+                                                        <div class="mb-2">
+                                                            <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Unstate
+                                                            </p>
+                                                        </div>
+                                                        <h4>60
+                                                        </h4>
+                                                    </div>
+                                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 p-0">
+                                                        <div class="mb-2">
+                                                            <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Total
+                                                            </p>
+                                                        </div>
+                                                        <h4>787
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                                    <div class="row health-each">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-13 col-sm-12 col-12">
+                                            <h5>Discovered Meters</h5>
+                                        </div>
+                                        <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                            <div class="chart-inner" id="m-chart3">
+                                                <canvas id="BA-chart-job-error2" id="m-chart-3" width="800"
+                                                    height="600"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                            <div class="row  chart-txt p-0">
+                                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0">
+                                                    <div class="mb-2">
+                                                        <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                        <p class="text-xs mt-1 mb-0 font-weight-bold">
+                                                            Unhealthy</p>
+                                                    </div>
+                                                    <h4>5
+                                                    </h4>
+                                                </div>
+                                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0">
+                                                    <div class="mb-2">
+                                                        <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                        <p class="text-xs mt-1 mb-0 font-weight-bold">Healthy</p>
+                                                    </div>
+                                                    <h4>15
+                                                    </h4>
+                                                </div>
+                                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0">
+                                                    <div class="mb-2">
+                                                        <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                        <p class="text-xs mt-1 mb-0 font-weight-bold">Unstate
+                                                        </p>
+                                                    </div>
+                                                    <h4>13
+                                                    </h4>
+                                                </div>
+                                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0">
+                                                    <div class="mb-2">
+                                                        <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                        <p class="text-xs mt-1 mb-0 font-weight-bold">Total
+                                                        </p>
+                                                    </div>
+                                                    <h4>33
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row health-each"  style="display: inline-flex;margin: 18px -10px;">
+                                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-13 col-sm-12 col-12">
+                                            <h5>DGs</h5>
+                                        </div>
+                                        <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                            
+                                            <div class="chart-inner" id="m-chart4">
+                                                <canvas id="BA-chart-job-error3" width="800" height="600"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                            <div class="row  chart-txt p-0">
+                                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0">
+                                                    <div class="mb-2">
+                                                        <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                        <p class="text-xs mt-1 mb-0 font-weight-bold">
+                                                            Unhealthy</p>
+                                                    </div>
+                                                    <h4>0
+                                                    </h4>
+                                                </div>
+                                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0">
+                                                    <div class="mb-2">
+                                                        <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                        <p class="text-xs mt-1 mb-0 font-weight-bold">Healthy</p>
+                                                    </div>
+                                                    <h4>1
+                                                    </h4>
+                                                </div>
+                                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0">
+                                                    <div class="mb-2">
+                                                        <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                        <p class="text-xs mt-1 mb-0 font-weight-bold">Unstate
+                                                        </p>
+                                                    </div>
+                                                    <h4>0
+                                                    </h4>
+                                                </div>
+                                                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0">
+                                                    <div class="mb-2">
+                                                        <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                                        <p class="text-xs mt-1 mb-0 font-weight-bold">Total
+                                                        </p>
+                                                    </div>
+                                                    <h4>1
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="row">
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="row stat-each">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <h1>Balance</h1>
+                                        <div id="chart1"></div>
+                                        <div class="row">
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 p-0">
+                                                <div class="mb-2">
+                                                    <div class="in-icon"><img alt="image" src="images/in-icon.png">
+                                                    </div>
+                                                    <p class="text-xs mt-1 mb-0 font-weight-bold">
+                                                        Total Balance</p>
+                                                </div>
+                                                <h4>₹2,25,087
+                                                </h4>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 p-0">
+                                                <div class="mb-2">
+                                                    <div class="in-icon"><img alt="image" src="images/in-icon.png">
+                                                    </div>
+                                                    <p class="text-xs mt-1 mb-0 font-weight-bold">Positive Balance </p>
+                                                </div>
+                                                <h4>₹8,56,392
+                                                </h4>
+                                            </div>
+                                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 p-0">
+                                                <div class="mb-2">
+                                                    <div class="in-icon"><img alt="image" src="images/in-icon.png">
+                                                    </div>
+                                                    <p class="text-xs mt-1 mb-0 font-weight-bold">Negative Balance
+                                                    </p>
+                                                </div>
+                                                <h4>-₹6,20,380
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="row stat-each">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <h1>Meter Consumption</h1>
+                                        <div id="chart2"></div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+
+                                        <div class="mb-2">
+                                            <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">
+                                                GRID Zero Consumption</p>
+                                        </div>
+                                        <h4>95
+                                        </h4>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="mb-2">
+                                            <div class="in-icon"><img alt="image" src="images/in-icon.png"></div>
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">DG Zero Consumption</p>
+                                        </div>
+                                        <h4> 1009
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="row stat-each">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <h1>Positive Balance</h1>
+                                        <ul>
+                                            <li> Total Postive Count <span class="float-end bg-info"> <a href="#"
+                                                        class="text-light">1336</a> </span></li>
+                                            <li> Total Not Cut Count <span class="float-end bg-success"><a href="#"
+                                                        class="text-light"> 1336</a> </span></li>
+                                            <li> Total Cut Count <span class="float-end bg-danger"><a href="#"
+                                                        class="text-light">0 </a> </span></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="row stat-each">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <h1>Negative Balance (Based On Cut Balance)
+                                        </h1>
+                                        <ul>
+                                            <li> Total Negative Count <span class="float-end bg-info"> <a href="#"
+                                                        class="text-light"> 182</a> </span></li>
+                                            <li> Total Cut Count <span class="float-end bg-success"><a href="#"
+                                                        class="text-light"> 148</a> </span></li>
+                                            <li> Total Not Cut Count <span class="float-end bg-danger"><a href="#"
+                                                        class="text-light"> 34 </a> </span></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--end-->
+                    <!--third-part-->
+                    <section class="third-part">
+                        <div class="row">
+
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                <div class="row stat-each">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <h1>Grid Consumption
+                                        </h1>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Flats</p>
+                                        </div>
+                                        <h4>102903 kWh</h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-primary w-70" role="progressbar"
+                                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Shops</p>
+                                        </div>
+                                        <h4>4228 kWh
+                                        </h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-success w-90" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Common Area
+                                            </p>
+                                        </div>
+                                        <h4>17177 kWh
+                                        </h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-danger w-30" role="progressbar"
+                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Audit Meter
+                                            </p>
+                                        </div>
+                                        <h4>104674 kWh
+                                        </h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-dark w-50" role="progressbar" aria-valuenow="50"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                <div class="row stat-each">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <h1>DG Consumption
+                                        </h1>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Flats</p>
+                                        </div>
+                                        <h4>102903 kWh</h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-primary w-70" role="progressbar"
+                                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Shops</p>
+                                        </div>
+                                        <h4>4228 kWh
+                                        </h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-success w-90" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Common Area
+                                            </p>
+                                        </div>
+                                        <h4>17177 kWh
+                                        </h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-danger w-30" role="progressbar"
+                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Audit Meter
+                                            </p>
+                                        </div>
+                                        <h4>104674 kWh
+                                        </h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-dark w-50" role="progressbar" aria-valuenow="50"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                <div class="row stat-each">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <h1>Water Consumption
+                                        </h1>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Flats</p>
+                                        </div>
+                                        <h4>102903 kWh</h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-primary w-70" role="progressbar"
+                                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Shops</p>
+                                        </div>
+                                        <h4>4228 kWh
+                                        </h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-success w-90" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Common Area
+                                            </p>
+                                        </div>
+                                        <h4>17177 kWh
+                                        </h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-danger w-30" role="progressbar"
+                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Audit Meter
+                                            </p>
+                                        </div>
+                                        <h4>104674 kWh
+                                        </h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-dark w-50" role="progressbar" aria-valuenow="50"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                <div class="row stat-each">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <h1>Gas Consumption
+                                        </h1>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Flats</p>
+                                        </div>
+                                        <h4>102903 kWh</h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-primary w-70" role="progressbar"
+                                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Shops</p>
+                                        </div>
+                                        <h4>4228 kWh
+                                        </h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-success w-90" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Common Area
+                                            </p>
+                                        </div>
+                                        <h4>17177 kWh
+                                        </h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-danger w-30" role="progressbar"
+                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                                        <div class="d-flex mb-2">
+                                            <p class="text-xs mt-1 mb-0 font-weight-bold">Audit Meter
+                                            </p>
+                                        </div>
+                                        <h4>104674 kWh
+                                        </h4>
+                                        <div class="progress w-75">
+                                            <div class="progress-bar bg-dark w-50" role="progressbar" aria-valuenow="50"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--end-->
+                    <!--third-part-->
+                    <section class="third-part">
+                        <div class="row">
+                            <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+                                <h1>Audit Summary</h1>
+                                <div class="row">
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="row stat-each">
+                                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <h1>Grid
+                                                </h1>
+                                                <div class="row">
+                                                    <div
+                                                        class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <ul>
+                                                            <li>
+                                                                Total Audit <span class="float-end bg-info"> 0
+                                                                    kWh</span></li>
+                                                            <li> Total Consumption <span
+                                                                    class="float-end bg-success">184 kWh</span></li>
+                                                            <li> Total Loss <span class="float-end bg-danger">0.0 %
+                                                                </span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="row stat-each">
+                                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <h1>DG
+                                                </h1>
+                                                <div class="row">
+                                                    <div
+                                                        class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <ul>
+                                                            <li>
+                                                                Total Audit <span class="float-end bg-info"> 0
+                                                                    kWh</span></li>
+                                                            <li> Total Consumption <span
+                                                                    class="float-end bg-success">184 kWh</span></li>
+                                                            <li> Total Loss <span class="float-end bg-danger">0.0 %
+                                                                </span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="row last-up">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <h1 class="mb-3">Last Updated</h1>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="card  mb-4">
+                                            <div class="card-body p-3">
+                                                <div class="row">
+                                                    <div class="col-12 text-end">
+                                                        <div
+                                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                            <img alt="image" src="images/i1.png">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="numbers">
+                                                            <p class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                Controller
+                                                            </p>
+                                                            <h5 class="font-weight-bolder mb-0">1 secs ago
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="card  mb-4">
+                                            <div class="card-body p-3">
+                                                <div class="row">
+                                                    <div class="col-12 text-end">
+                                                        <div
+                                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                            <img alt="image" src="images/i2.png">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="numbers">
+                                                            <p class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                Meter</p>
+                                                            <h5 class="font-weight-bolder mb-0">1 secs ago
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="card  mb-4">
+                                            <div class="card-body p-3">
+                                                <div class="row">
+                                                    <div class="col-12 text-end">
+                                                        <div
+                                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                            <img alt="image" src="images/i3.png">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="numbers">
+                                                            <p class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                Invoice</p>
+                                                            <h5 class="font-weight-bolder mb-0">8 mins 27 secs ago
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="card  mb-4">
+                                            <div class="card-body p-3">
+                                                <div class="row">
+                                                    <div class="col-12 text-end">
+                                                        <div
+                                                            class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                                            <img alt="image" src="images/i4.png">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="numbers">
+                                                            <p class="text-sm mb-0 text-capitalize font-weight-bold">
+                                                                Last Recharge</p>
+                                                            <h5 class="font-weight-bolder mb-0">32 secs ago
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--end-->
+
+                </div>
+            </div>
+
+            <!--footer-->
+            <footer class="main-footer">
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <p>Copyright @2024. All Rights Reserved</p>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div id="chcp_font_size" class="input-group">
+                            <span class="input-group-btn">
+                                <button id="btn-decrease" class="btn btn-default" type="button"><i class="fa fa-font"
+                                        aria-hidden="true"></i>-</button>
+                                <button id="btn-orig" class="btn btn-default" type="button"><i class="fa fa-font"
+                                        aria-hidden="true"></i></button>
+                                <button id="btn-increase" class="btn btn-default" type="button"><i class="fa fa-font"
+                                        aria-hidden="true"></i>+</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--end-->
+        </div>
+
+        <!--end-->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+
+        <!-- ApexCharts -->
+        <script src="js/apexcharts.js"></script>
+        <script src="js/apex-custom.js"></script>
+
+        <!--charts-->
+        <script src="js/Chart.min.js"></script>
+        <script src="js/chartjs-plugin-labels.js"></script>
+        <script src="js/chartjs-plugin-doughnutlabel.js"></script>
+        <script src="js/doughnut-custom.js"></script>
+
+        <!-- Optional JavaScript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/custom.js"></script>
+
+        <!--Bootstrap-->
+        <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
