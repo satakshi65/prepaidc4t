@@ -1,0 +1,114 @@
+body.dark {
+        background-color: var(--color6);
+        color: var(--color7);
+      a{
+        color: var(--color7);
+      }
+      .main-header, .sticky {
+        box-shadow: none;
+        background: var(--color8) !important;
+    }
+    .site-left {
+      background: #000000;
+      background: linear-gradient(40deg, #3e3e3e 0%, #98a4c6 100%);
+  }
+  form.project-dropdown select {
+    color: #fff;
+}
+.notification svg {
+  fill: var(--bg-color);
+}
+.main-site-area h1 {
+  color: var(--bs-light);
+}
+.site-left h4 {
+  color: var(--bs-light);
+}
+.site-left h4 strong {
+  color: var(--bg-color);
+}
+.site-left ul li {
+  color: var(--bs-light);
+}
+.card {
+  background-color: var(--bs-gray-dark);
+  border: none;
+}
+.numbers h5 {
+  color: var(--bg-color);
+}
+.row.stat-each {
+  background: var(--bs-gray-dark);
+}
+.checkbox-label {
+  background-color: #6c757d;
+}
+.top-form form select, .top-form form input[type="email"], .top-form form input[type="text"] {
+  color: var(--bg-color);
+}
+.main-table-sec .table-striped>tbody>tr:nth-of-type(odd) {
+  --bs-table-accent-bg: hsl(0deg 0% 28.06%);
+}
+.main-table-sec table tbody tr th, .main-table-sec table tbody tr td {
+  color: #dfdfdf;
+}
+.logo-area img {
+  background: var(--dark-color);
+}
+.table-search form input[type="search"] {
+  background: #2f2f2f;
+  color: var(--bg-color);
+  border: none;
+}
+.records {
+  color: #fff;
+}
+section.last-updated .icon.icon-shape img {
+  background: #fff;
+  border-radius: 5px;
+  opacity: 1;
+}
+.middle-part .row.stat-each p, .row.stat-each p {
+  color: #bcbdff;
+}
+.apexcharts-legend-text {
+  color: #fff !important;
+}
+#chart .apexcharts-legend-text {
+  color: #000 !important;
+}
+#chart, .chart-box {
+  margin: 20px 0 0;
+}
+.middle-part table tbody, .middle-part table tbody tr th {
+  background: #1c1c1c;
+  color: #fff;
+}
+.notify-box h4 {
+  border-bottom: 1px solid #505050;
+}
+.notify-box h4 {
+  border-bottom: 1px solid #505050;
+  color: #000;
+  font-family: 'Gilroy';
+}
+.notify-box ul li p, .notify-box ul li h6 {
+  color: #000;
+}
+.health-each {
+  border: none;
+  background: hsl(206deg 100% 88.86%);
+}
+.site-name h4 {
+  color: #fff;
+}
+.user-sec h4 {
+  color: #fff;
+}
+.chart-txt p {
+  color: #000 !important;
+}
+.chart-txt h4 {
+  color: #000 !important;
+}
+  }
